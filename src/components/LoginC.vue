@@ -2,15 +2,27 @@
   <div class="login_container">
     <div class="login_box">
       <div class="avatar_box">
-        <img src="../assets/logo.png">
+        <img src="../assets/logo.png" />
       </div>
+
+      <el-form ref="form" label-width="0px" class="login-form">
+        <el-form-item>
+          <el-input></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-input></el-input>
+        </el-form-item>
+        <el-form-item class="btns">
+          <el-button type="primary">登录</el-button>
+          <el-button type="info">重置</el-button>
+        </el-form-item>
+      </el-form>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style lang="less" scoped>
@@ -45,6 +57,16 @@ export default {
       background-color: #eee;
     }
   }
+  .login-form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
-
 </style>
