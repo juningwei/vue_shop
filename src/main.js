@@ -4,6 +4,8 @@ import router from './router'
 import { Form, FormItem, Input, Button } from 'element-ui'
 
 import './assets/css/global.css'
+
+import './assets/fonts/iconfont.css'
 Vue.config.productionTip = false
 
 Vue.use(Form)
